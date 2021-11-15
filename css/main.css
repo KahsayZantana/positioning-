@@ -1,9 +1,11 @@
 /* Global rules */
 
-@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Libre+Baskerville:ital@0;1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 
 html {
-    background-color: lightgray;
+    background-color: brown;
     font-family: 'Libre Baskerville', serif;
     font-size: 0.95em;
     line-height: 1.5em;
@@ -11,19 +13,19 @@ html {
 
 ::selection {
     color: #000; 
-    background: yellow;
+    background: brown;
 }
 
 h1 {
-    font-family:'Courgette',cursive;
+    font-family: 'Courgette', cursive;
     font-weight: normal;
     margin: auto;
-    background: #fff;
+    background: #7C4935;
     line-height: 2.5em;
 }
 
 main.wrapper {
-    background-color: white;
+    background-color:brown;
     overflow: auto;
 }
 
@@ -38,13 +40,13 @@ h2,h3 {
 }
 
 a {
-    color: rgb(42,165,93);
+    color:rgb(42, 165, 93) ;
     text-decoration: none;
 }
 
 a:hover {
     color: #CD7E59;
-    background-color:yellow;
+    background-color: yellow;
     text-decoration: none;
 }
 
@@ -54,35 +56,41 @@ footer {
     padding: 1em;
 }
 
-/*positioning rules start here*/
+/* positionimng styles start here */
+
+
+
 
 .text-align-center{
-    text-align:center;
-    background-color:aqua;
+    text-align:center; 
+    background-color: aqua;
+
 }
 
 .margin-auto > div{
-margin:auto;
-width:50%;
-background-color:beige;
-text-align:center;
+    margin:auto;
+    background-color: beige;
+    text-align:center;
+    width: 50%;
+   
+    
 }
 
-/*positioning rules start here*/
+/* positionimng styles end here */
 
-/*Responsive 2 column layout starts here*/
+/*responsive 2 column layout rules starts here*/
 
 /* Allows box to take up full space, ignoring padding/margin */
 * {
     box-sizing: border-box;
   }
- /* Create two equal columns that floats next to each other */
+ 
+/* Create two equal columns that floats next to each other */
 .column {
     float: left;
     width: 50%;
     padding: 10px;
     min-height: 300px; /* Can be removed. Only for demonstration */
-    
   }
    /* Clear floats after the columns */
   .row:after {
@@ -91,10 +99,9 @@ text-align:center;
     clear: both;
   }
  
-/*Responsive 2 column layout ends here*/
+/*responsive 2 column layout rules end here*/
 
-/*font awesome flexbox social media rules start here*/
-
+/* font awsome social media and flex box starts here */
 
 .fa {
     padding: 20px;
@@ -129,12 +136,15 @@ text-align:center;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   }
 
-
+ 
   .container {
-    display:flex;
-    justify-content: space- evenly;
-}
- /*font awesome flexbox social media rules start here*/
+    display: flex;
+    justify-content: space-evenly;
+  }
+ 
+
+ 
+/* font awsome social media and flex box ends here */
 
 
 
@@ -194,11 +204,13 @@ text-align:center;
     picture.profile img {
         width: 100%;
     }
+
+    /* columns take a whole screen */
+    .column {
+        width: 100%;
+      }
  
-   /*view column stacked in phone*/ 
-   .column {
-    width: 100%;
-    }
 
 
+    
 }
